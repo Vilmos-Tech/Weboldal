@@ -70,7 +70,7 @@ hr {
     padding: 0.3vw;
 }
 
-.nav-link:hover, a:hover {
+.nav-link:hover {
     color: rgb(172.08, 203.48, 250.76);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(172.08, 203.48, 250.76, 0.4);
@@ -205,7 +205,8 @@ hr {
 
 .about-text {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1rem ;
+    margin-bottom: 0.5vw;
     color: rgb(231, 231, 231);
     text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
 }
@@ -627,3 +628,47 @@ iframe {
 
 /* Másik fajta animáció vége */
 
+/* itt kezdődöt link */
+
+
+/* ending x styleja */
+.in-text-link {
+    color: white;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    /* padding-bottom: 0vw; */
+    margin: 0vw ; 
+    width: fit-content; 
+    margin-bottom: 0.4rem ;
+    transition: ease-in-out 0.30s;
+}
+
+.in-text-link:hover {
+    letter-spacing: 0.2vw;
+}
+    
+
+#ls-off:hover {
+    letter-spacing: normal;
+}
+
+
+/* aláhúzás animáció */
+.in-text-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(147, 186, 245);
+    transition: width 0.3s ease-in-out;
+}
+
+/* középről jojjon az alahuzas */
+.in-text-link:hover::after {
+    width: 100%;
+    border-radius: 0.4vw;
+}
