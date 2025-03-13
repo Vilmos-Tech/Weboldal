@@ -1,0 +1,111 @@
+
+
+
+    .nav-link:hover {
+            color: rgb(5, 210, 5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgb(5, 210, 5);
+        }
+
+     
+   h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
+        }
+
+        .roadmap-container {
+            background-color: rgba(35.641, 37.137, 38.046, 0.9);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 10rem;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(35.641, 37.137, 38.046, 0.4);
+        }
+        
+        .roadmap-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: rgb(172.08, 203.48, 250.76);
+            text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
+        }
+        
+        .roadmap-subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: rgba(172.08, 203.48, 250.76, 0.3);
+        }
+        
+        .roadmap-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 30px;
+        }
+        
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(172.08, 203.48, 250.76);
+            border: 3px solid rgba(35.641, 37.137, 38.046, 0.9);
+        }
+        
+        .roadmap-year {
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .roadmap-milestone {
+            font-size: 1.5rem;
+            color: rgb(172.08, 203.48, 250.76);
+            margin-bottom: 0.5rem;
+        }
+        
+        .roadmap-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+        }
+
+
+#disclaimer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    
+}
+
+
+.roadmap-image {
+    height: 2rem;
+    filter: invert(100%);
+    transform: translateY(0.2rem);
+    user-select: none;
+}
+
+
