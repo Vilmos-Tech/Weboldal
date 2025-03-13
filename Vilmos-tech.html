@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilmos Tech</title>
+
+<style>
+
+   .container {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      height: 1%;
+    }
+
+    .indexkep {
+      display: inline-block;
+      scale: 175%;
+      border-radius: 15px; /* Lekerekített sarkok */
+      border: 5px solid #ccc; /* Szürke keret */
+      z-index: 1;
+    }
+
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: auto;
+    }
+
+    .header{
+      scale: 0.33 ;
+      min-height: 5vw;
+      left: -4.5vw ;
+      top: 1.7vw ;
+      min-width:fit-content;
+      border-radius: 1vw;
+      position:fixed;
+      margin-top: -2.7vw;
+      z-index: 999;
+    }
+
+    .text{
+      text-align: center;
+      border-radius: 15px;
+      scale: 1;
+    }
+
+    a {
+  text-decoration: none; /* Az aláhúzás eltávolítása */
+  color: inherit; /* A szöveg színének öröklése a szülőelemből */
+}
+
+a:hover {
+  text-decoration: underline; /* Tetszés szerint: aláhúzás csak egér fölé vitelekor */
+}
+
+    a:visited{
+      color: inherit;
+    }
+
+    nav {
+      position: fixed; /* Fixálás a bal oldalon */
+      top: 6.5%;
+      left: 0.20%;
+      scale: 0.932;
+      min-height:fit-content;
+      min-width: fit-content;
+      max-width: fit-content; 
+      max-height: fit-content;
+      background-color: #333;
+      padding: 0.5%;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      z-index: 9999;
+    }
+
+/* Menüpontok */
+nav a {
+     
+scale:1 ;
+  word-wrap:normal ;
+  overflow-wrap:break-word ;
+  white-space: normal ;
+  max-width: 100%; 
+    
+      z-index: 999999;
+      min-width: 1vw;
+      display:block ;
+      color: white;
+      text-decoration: none;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #444;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+     background-color: gray;
+     text-decoration: none;
+    }
+
+   
+
+    
+    section {
+      
+      padding: 50px;
+      min-height: 70vw; 
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Szakasz címei */
+    section h2 {
+      margin: 0;
+      font-size: 3.5vw;
+      
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+
+.animated-text{
+  color: red;
+  animation-name: text-animation;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+@keyframes  text-animation {
+  from {color: red;}
+  to { color: rgb(75, 18, 182);;}
+}
+
+
+
+.setup-anim:hover
+{
+  background-color: rgb(46, 46, 46);
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-name: rgb-setup;
+  color: cyan;
+}
+
+@keyframes rgb-setup
+{
+from {color: cyan;}
+to { color: rgb(134, 31, 29);}
+
+}
+
+section {
+  scroll-margin-top: 5vw; 
+}
+
+body{
+  
+  background-image: linear-gradient(to left,rgb(129, 195, 218),rgb(30, 86, 145));
+}
+
+
+.BTS-anim:hover{
+  
+  text-decoration: none;
+  width: 14%;
+  color: rgb(rgb(9.9136, 5.8198, 5.9712));
+  animation-name: BTS-animation;
+  animation-duration: 1.5s;
+  transform: scale(1);
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes BTS-animation{
+  0% {scale: 1; } 
+  25% {scale: 2;}
+  50% {scale: 0.3;}
+  75% {scale: 2.3;}
+  100% {scale: 1;}
+}
+
+#myBtn {
+  text-transform: none;
+  min-width:fit-content;
+  min-height: fit-content;
+  display:contents ;
+  position: fixed;
+  z-index: 99;
+  font-size: 3.5vw;
+  color: white;
+  cursor: pointer;
+  border-radius: 4%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.cut-setup{
+  width: 100%;
+  height: 100%vh;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  width: 300px;
+  list-style:none ;
+}
+
+
+
+.video-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .video-thumbnail img {
+            width: 50vw;
+            border-radius: 10px;
+        }
+        .video-title {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .video-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .video-link:hover .video-title {
+            text-decoration: underline;
+            color: #ff0000;
+        }
+
+
+
+
+
+
+</style>
+
+<script src="java.js"></script>
+    
+</head >
+<center><body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-seri;"; >
+ 
+  
+  <h1><div class="header" style="background-color: cyan;"><button onclick="topFunction()" id="myBtn" title="Lap tetejére">Vilmos Tech</button></div></h1>
+
+
+
+
+
+
+
+  <nav>
+    <a href="#section1">Bemutatkozás</a>
+    <a href="#section2">Legújabb videó</a>
+    <a  class="setup-anim"   href="#section3">Setup</a>
+    <a href="#section4">Behind the scenes</a>
+    
+  </nav>
+
+  <section id="section1">
+    <h2>Bemutatkozás</h2>
+    <p>Üdv! Vilmos vagyok, jelenleg 15 éves. Szeretek hobby szinten videókat készíteni </p>
+  </section>
+
+
+  <section id="section2">
+
+    <h2>Legújabb videó</h2> <br>  
+    <div class="video-container" >
+      <a id="videoLink" class="video-link" href="#" target="_blank">
+          <div class="video-thumbnail" >
+              <img id="thumbnail" src="" alt="Legújabb videó indexképe">
+          </div>
+          <div class="video-title" id="title"></div>
+      </a>
+  </div>
+
+  </section>
+
+
+  <section id="section3">
+    <h2 class="animated-text";>Setup</h2>
+    <p>Gondoltam, hogy itt talállak :)</p>
+
+    <div class="cut-setup">
+      <h2>Vágó Setup</h2>
+        <ul>
+          <li class="main_list_item"><h2>M4 mac mini</h2></li>
+          <li class="list_item"><b>Billenytűzet</b>Apple magic keyboard</li>
+          <li class="list_item"><b>Egér</b>Logitech MX Master 3S</li>
+          <li class="list_item"><b>Hangszóró</b>Edifier R1700BT</li>
+          <li class="list_item"><b>Monitor</b>AOC 24G2SU</li>
+        </ul>
+    </div>
+  </section>
+
+
+
+  <section id="section4">
+    <h2>Behind the scenes</h2>
+    <p>Csakis a szemfüles nezőknek</p>
+   <div  style="margin-top: 7%;"                class="BTS-anim"> <a href="https://youtu.be/wJT1cpdZZw8" target="_blank" class=""  >Mi lehet ez?</a></div> 
+  </section>
+
+
+
+
+
+
+
+
+</body></center>
+</html>

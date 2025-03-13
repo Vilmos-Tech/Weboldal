@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oldal Navigáció</title>
+  <style>
+    /* Alapstílus az oldalhoz */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigációs menü stílusa */
+    nav {
+      position: fixed; /* Fixálás a bal oldalon */
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%; /* Teljes magasság */
+      background-color: #333;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Menüpontok */
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #444;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555; /* Hover effekt */
+    }
+
+    /* Tartalmi szakaszok stílusa */
+    section {
+      margin-left: 220px; /* Hagyj helyet a menünek */
+      padding: 50px;
+      min-height: 100vh; /* Minden szakasz teljes képernyőt töltsön ki */
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Szakasz címei */
+    section h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigációs menü -->
+  <nav>
+    <a href="#section1">Szakasz 1</a>
+    <a href="#section2">Szakasz 2</a>
+    <a href="#section3">Szakasz 3</a>
+    <a href="#section4">Szakasz 4</a>
+  </nav>
+
+  <!-- Weboldal tartalma -->
+  <section id="section1">
+    <h2>Szakasz 1</h2>
+    <p>Ez az első szakasz tartalma.</p>
+  </section>
+  <section id="section2">
+    <h2>Szakasz 2</h2>
+    <p>Ez a második szakasz tartalma.</p>
+  </section>
+  <section id="section3">
+    <h2>Szakasz 3</h2>
+    <p>Ez a harmadik szakasz tartalma.</p>
+  </section>
+  <section id="section4">
+    <h2>Szakasz 4</h2>
+    <p>Ez a negyedik szakasz tartalma.</p>
+  </section>
+</body>
+</html>
