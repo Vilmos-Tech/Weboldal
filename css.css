@@ -178,7 +178,6 @@ hr {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(172.08, 203.48, 250.76);
-    text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
 }
 
 .about-card-main {
@@ -224,7 +223,7 @@ hr {
     margin-top: 1rem ;
     margin-bottom: 0.5vw;
     color: rgb(231, 231, 231);
-    text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
+    
 }
 
 
@@ -283,7 +282,6 @@ hr {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(172.08, 203.48, 250.76);
-    text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
 }
 
 .product-list {
@@ -359,7 +357,7 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
+    /* nem a legszebb */ text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3); 
 }
 
 .yt-container {
@@ -398,7 +396,6 @@ iframe {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(172.08, 203.48, 250.76);
-    text-shadow: 0 0 10px rgba(172.08, 203.48, 250.76, 0.3);
 }
 
 .yt-description {
@@ -438,6 +435,11 @@ iframe {
     gap: 3rem;
     max-width: 80%;
     margin: 4rem auto;
+
+     /* meglenés görgetésre animáció */
+     animation: appear ease-in-out ;
+     animation-timeline: view();
+     animation-range: entry 0 cover 15% ;
 }
 
 .project-card {
@@ -449,6 +451,11 @@ iframe {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     box-shadow: 0 5px 20px rgba(35.641, 37.137, 38.046, 0.4);
+
+    /* meglenés görgetésre animáció */
+    animation: appear ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25% ;
 }
 
 .project-card:hover {
@@ -743,3 +750,4 @@ iframe {
     }
     
 }
+
