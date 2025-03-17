@@ -150,7 +150,6 @@ hr {
 
 #thank-part {
     margin-top: 6rem;
-
     animation:  linear;
     animation-name: appear  ;
     animation-timeline: view();
@@ -223,7 +222,6 @@ hr {
     margin-top: 1rem ;
     margin-bottom: 0.5vw;
     color: rgb(231, 231, 231);
-    
 }
 
 
@@ -254,8 +252,6 @@ hr {
     animation-name: appear  ;
     animation-timeline: view();
     animation-range: entry 0 cover 35% ;
-    
-
 }
 
 .setup-card-server {
@@ -269,7 +265,11 @@ hr {
     width: 40%;
     margin: auto;
     margin-top: -3.5rem;
-    
+
+
+    animation-name: appear  ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25% ;
 }
 
 .setup-card:hover {
@@ -307,7 +307,7 @@ hr {
 .product-card:hover {
     transform: translateX(8px) translateY(-6px);
     border-radius: 0.5vw;
-    box-shadow: 0px 0px 1.5rem 0.0009px rgb(172.08, 203.48, 250.76);
+    box-shadow: 0px 0px 0.8rem 0.8px rgb(172.08, 203.48, 250.76);
 }
 
 .product-image {
@@ -437,7 +437,7 @@ iframe {
     margin: 4rem auto;
 
      /* meglenés görgetésre animáció */
-     animation: appear ease-in-out ;
+     animation: appear linear ;
      animation-timeline: view();
      animation-range: entry 0 cover 15% ;
 }
@@ -732,7 +732,7 @@ iframe {
 /* Appear animáció (scroll */
 
 .product-card {
-    animation: appear ease-in-out ;
+    animation: appear linear ;
     animation-timeline: view();
     animation-range: entry 0 cover 15% ;
 }
