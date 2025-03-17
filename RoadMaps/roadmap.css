@@ -108,4 +108,75 @@
     user-select: none;
 }
 
+/* ahol több project is van */
 
+.select-project-container {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    padding: 1.5vw;
+    grid-template-rows:  repeat(auto-fit, 15rem);
+    gap: 1.5vw;
+    background-color: rgb(7, 10, 17) ;
+    border-radius: 0.4vw;
+    height: 45rem;
+
+
+    /* meglenés görgetésre animáció */
+    animation: appear ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20% ;
+    
+}
+
+.select-project-card {
+    background-color: rgba(35.641, 37.137, 38.046, 0.9);
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    border-radius: 0.6vw;
+    transition: 0.20s ease-in-out;
+    box-shadow: 0 5px 20px rgba(35.641, 37.137, 38.046, 0.4);
+
+    /* meglenés görgetésre animáció */
+    animation: appear ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50% ;
+}  
+
+.select-project-card:hover {
+    transform: translateY(-10px) scale(1.01) ;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 0.6rem 0.009px rgb(172.08, 203.48, 250.76);
+    
+} 
+
+
+.select-project-card-pr-name-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(172.08, 203.48, 250.76);
+}
+
+
+.select-project-card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.project-roadmap {
+    /* ez a linkek Css-e */
+   
+
+   }
+
+
+.select-div-logo {
+    height: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
