@@ -179,7 +179,8 @@
 .select-project-card-pr-name-text {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: rgb(172.08, 203.48, 250.76);
+    color:    rgb(172.08, 203.48, 250.76)  ; 
+    /*  vagy ez rgb(172.08, 203.48, 250.76); */
 }
 
 
