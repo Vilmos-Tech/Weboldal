@@ -319,10 +319,10 @@ hr {
     height: 4rem;
     border-radius: 0.2vw;
     user-select: none;
+    transition: linear 0.2s;
 }
 
 .product-image:hover {
-    transition: all ease-in-out 0.25s;
     height: 4.6rem;
     border-radius: 0.5vw;
 }
