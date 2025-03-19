@@ -61,7 +61,7 @@
         .roadmap-item {
             position: relative;
             margin-bottom: 2rem;
-            padding-left: 30px;
+            padding: 0.5rem;
             transition: 0.15s;
 
              /* meglenés görgetésre animáció */
@@ -72,7 +72,7 @@
 
         .roadmap-item:hover {
             border-radius: 0.6vw;
-            background-color:  rgba(57, 58, 59, 0.9); ;
+            background-color:  rgba(50, 50, 50, 0.9); ;
         }
         
         .roadmap-item::before {
@@ -94,7 +94,6 @@
             transform: scale(1.25);
         }
         .roadmap-year {
-            
             color: rgba(255, 255, 255, 255);
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
