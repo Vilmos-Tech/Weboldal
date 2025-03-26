@@ -1,6 +1,3 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=BE+Vietnam+Pro:wght@400;700&display=swap');
 
 * {
@@ -12,6 +9,7 @@
 
 html {
     scrollbar-gutter: stable;
+    scroll-behavior: smooth;
   }
 
 body {
@@ -486,27 +484,30 @@ h1 {
     display: block;
     margin-top: 2.5rem;
     width: fit-content;
-    transition: 0.30s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    transform-origin: center;
 }
 
-.project-roadmap:hover {
+.project-roadmap:hover, .project-roadmap-2option:hover {
    letter-spacing: 0.18rem;
+   transform: translateY(-2px);
 }
 
-.project-roadmap::after {
+.project-roadmap::after, .project-roadmap-2option::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 0;
+    bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(147, 186, 245);
-    transition: 0.3s ease-in-out;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 8px rgba(147, 186, 245, 0.4);
 }
 
-.project-roadmap:hover::after {
+.project-roadmap:hover::after, .project-roadmap-2option:hover::after {
     width: 100%;
     border-radius: 0.4vw;
 }
@@ -759,3 +760,12 @@ h1 {
 li {
     list-style-position: inside;
 }
+
+
+
+
+
+
+
+
+
