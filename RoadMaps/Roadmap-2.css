@@ -1,0 +1,96 @@
+
+/* ROADMAP TELJES NO AI */
+
+.roadmap-container {
+    background-color: rgba(35.641, 37.137, 38.046, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(35.641, 37.137, 38.046, 0.4);
+}
+
+.roadmap-container::before {
+    content: '';
+    position: absolute;
+    left: 6%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(172.08, 203.48, 250.76, 0.3);
+    
+}
+
+.roadmap-item {
+    margin: auto;
+    height: fit-content;
+    width: 80%;
+    border-radius: 0.4vw;
+    position: relative;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.roadmap-item:hover {
+    border-radius: 0.6vw;
+    background-color:  rgba(50, 50, 50, 0.9); ;;
+}
+
+.roadmap-item::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.2);
+    border-radius: 50%;
+    background-color: rgb(172.08, 203.48, 250.76);
+    border: 3px solid rgba(35.641, 37.137, 38.046, 0.9);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+.roadmap-item:hover::before {
+    transform: scale(1.5);
+    background-color: rgb(114, 167, 245);
+    /* border: 3px solid rgba(59, 62, 65, 0.9); */
+}
+
+.roadmap-item-name {
+    color: rgb(172.08, 203.48, 250.76);
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+    width: 100%;
+
+
+}
+
+.roadmap-item-image {
+    height: 2rem;
+    filter: invert(100%);
+}
+
+.roadmap-item-date {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.roadmap-item-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    font-weight: 300;
+}

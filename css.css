@@ -72,13 +72,15 @@ hr {
     font-size: 1.1rem;
     transition: all 0.3s ease;
     padding: 0.3vw;
+    border: 1px solid transparent;
 }
 
 .nav-link:hover {
     color: rgb(172.08, 203.48, 250.76);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(172.08, 203.48, 250.76, 0.4);
+    filter: drop-shadow(0px 10px 10px rgba(172.08, 203.48, 250.76, 1))  ;
     border-radius: 0.4rem;
+    
     
 }
 
@@ -86,11 +88,12 @@ hr {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0.3vw;
     color: rgb(172.08, 203.48, 250.76);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(172.08, 203.48, 250.76, 0.4);
+    filter: drop-shadow(0px 15px 10px rgb(39, 92, 171))  ;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.4rem;
 }
 
@@ -761,11 +764,15 @@ li {
     list-style-position: inside;
 }
 
+/*-------------------------------------------*/
+
+/*----------------About Me 2.0---------------*/
+
+.main-content-SF {
+    font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
+    margin-top: 6rem;
+    font-weight: 300;
+}
 
 
-
-
-
-
-
-
+  
